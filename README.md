@@ -8,18 +8,7 @@
 
 ### --- Tech Stack
 
-Language
-
-```
-Python
-```
-
-Framework
-
-```
-Selenium
-Beautiful Soup
-```
+**Python** language + **Selenium** and **Beautiful Soup** frameworks.
 
 ## Test 2 | Test File
 
@@ -29,13 +18,4 @@ Beautiful Soup
 
 ### --- Tech Stack
 
-Language
-
-```
-Scala
-```
-
-Framework
-
-```
-```
+**Scala** language + **Spark** framework.

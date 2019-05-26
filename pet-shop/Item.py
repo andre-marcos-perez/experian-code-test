@@ -9,5 +9,8 @@ class Item:
         self.details = details
 
     def __str__(self):
-        return Item.category + "," + self.name + "," + str(self.code) + "," + \
-            str(self.price) + "," + self.details
+        return Item.category + ";" + self.name + ";" + self.code + ";" + \
+            self.price + ";" + self.details
+
+    def __eq__(self, other):
+        return self.code == other.code
