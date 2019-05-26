@@ -15,7 +15,6 @@ def main():
     output = output.select(["Name", "Age", "Email"]).collect()
     for row in output:
         user = User(row.Name, row.Age, row.Email)
-        print(user)
         users.append(user)
 
 if __name__ == "__main__":
