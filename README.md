@@ -29,4 +29,14 @@ from the first 20 items of the pet shop section in the Extra supermarket website
 
 ### Problem
 
+Find duplicate lines between two large files (~ 10 million lines) and store them
+in the appropriate data structure. A line is composed as follows:
+
+* first name last name, age, email
+
 ### Solution
+
+1. Using **Pyspark**, read data as dataframes and inner join them using all cols
+2. Iterate over the result dataframe:
+   - Instantiate user object with line info;
+   - Enqueue instantiated user on an users list.
