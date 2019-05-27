@@ -1,16 +1,36 @@
 class Item:
+    """ This is a class to represent an online sold item.
 
-    category = "Pet Shop"
+    Attributes
+    ----------
+    category: str
+        Item's category.
+    name: str
+        Item's name.
+    code: str
+        Item's unique code.
+    price: str
+        Item's price in brazilian currency (BRL).
+    details: str
+        Item's long description.
+    """
 
-    def __init__(self, name, code, price, details):
+    def __init__(self, category, name, code, price, details):
+        self.category = category
         self.name = name
         self.code = code
         self.price = price
         self.details = details
 
     def __str__(self):
-        return Item.category + ";" + self.name + ";" + self.code + ";" + \
+        return self.category + ";" + self.name + ";" + self.code + ";" + \
             self.price + ";" + self.details
 
     def __eq__(self, other):
-        return self.code == other.code
+        if type(other) is type(self):
+            return self.code == other.code
+        else:
+            return False
+
+    def __hash__(self):
+        return self.code

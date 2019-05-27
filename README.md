@@ -2,7 +2,7 @@
 
 ## Test 1 | Pet Shop
 
-### Problem
+### - Problem
 
 Using **Python**, **Selenium** and **Beautiful Soup**, get the following info
 from the first 20 items of the pet shop section in the Extra supermarket website
@@ -13,7 +13,7 @@ from the first 20 items of the pet shop section in the Extra supermarket website
 * price;
 * details.
 
-### Solution
+### - Solution
 
 1. From root webpage, go to most sold pet shop items webpage:
    - Access root webpage, click on *Todos os departamentos* then on *Pet Shop*;
@@ -27,14 +27,14 @@ from the first 20 items of the pet shop section in the Extra supermarket website
 
 ## Test 2 | Test File
 
-### Problem
+### - Problem
 
 Find duplicate lines between two large files (~10 million lines) and store them
 in the appropriate data structure. A line is composed as follows:
 
 * first name last name, age, email
 
-### Solution
+### - Solution
 
 1. Using **Pyspark**, read files as dataframes and inner join them using all cols
 2. Iterate over the joined dataframe:
