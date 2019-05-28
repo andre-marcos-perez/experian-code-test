@@ -6,7 +6,6 @@ from selenium import webdriver
 def main():
 
     FILENAME = 'items.csv'
-    items = list()
 
     try:
         chrome = webdriver.Chrome("C:\chromedriver.exe")
@@ -20,9 +19,10 @@ def main():
         elements = chrome.find_element_by_class_name("vitrineProdutos")
         elements = elements.find_elements_by_class_name("link")
         links = list()
-        for element in elements[:20]:
+        for element in elements[:2]:
             links.append(element.get_attribute("href"))
         """ 3. Loop through links. """
+        items = list()
         for link in links:
             chrome.get(link)
             element = chrome.find_element_by_class_name("area-root")
