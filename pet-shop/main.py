@@ -19,7 +19,7 @@ def main():
         elements = chrome.find_element_by_class_name("vitrineProdutos")
         elements = elements.find_elements_by_class_name("link")
         links = list()
-        for element in elements[:2]:
+        for element in elements[:20]:
             links.append(element.get_attribute("href"))
         """ 3. Loop through links. """
         items = list()
